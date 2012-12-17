@@ -1,0 +1,13 @@
+{% extends "base_verifica.html" %}
+
+{%  block title %}{{ block.super }} | Verifiche effettuate {% endblock %}
+
+{% block content %}
+    {% for verifica in object_list %}
+      {{ verifica.url_id.name }}
+        <p>Risultato verifica: {{ verifica.risultato }}</p>
+        <p><a href="{{ verifica.url_id.url }}"> Vai al sito</a></p>
+        <p><a href="{{ verifica.url_id.get_absolute_url }}"> Dettagli verifica</a></p>
+    {% endfor %}
+{% endblock %}
+
