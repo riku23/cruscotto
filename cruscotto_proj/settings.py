@@ -119,6 +119,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'cruscotto',
     'django.contrib.admindocs',
+    'south',
+    'sitescheck',
 )
 
 # A sample logging configuration. The only tangible logging

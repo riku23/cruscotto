@@ -1,0 +1,9 @@
+{% extends "base_dettaglio_verifica.html" %}
+
+{%  block title %}{{ block.super }} | Dettaglio Verifica {% endblock %}
+
+{% block content %}
+    Ciao {{ verifica.url_id.name }}
+    <p>Risultato ultima verifica: {{ verifica.risultato }}</p>
+{% endblock %}
+

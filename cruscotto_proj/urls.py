@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'cruscotto_proj.views.home', name='home'),
     # url(r'^cruscotto_proj/', include('cruscotto_proj.foo.urls')),
     (r'^verifica/', include('cruscotto.urls.verifica')),
+    (r'^check/', include('sitescheck.urls')),
 
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
